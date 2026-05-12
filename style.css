@@ -127,10 +127,15 @@ input:valid {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 50%;
+    margin: 40%;
     text-align: center;
-    padding: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    color: green;
+    color: rgb(0, 98, 128);
     animation: fadeIn 0.5s ease-in; /* A little test run */
+}
+
+/* Animation Test run */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
 }
