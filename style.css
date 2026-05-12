@@ -1,0 +1,136 @@
+body {
+  font: 1em sans-serif;
+  width: 200px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: rgb(171, 219, 219);
+  border: white;
+}
+
+form {
+    border: white;
+    max-width: 200px;
+    color: #000000;
+    width: 1000px;
+    margin: 90px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(93, 133, 145, 0.781);
+}
+
+p * {
+  display: block;
+}
+
+input {
+    display: flex;
+    align-items: center;
+  appearance: none;
+  width: 100%;
+  border: 1px solid #333333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+/* invalid fields */
+input.invalid {
+  border: 2px solid #990000;
+  background-color: #ffdddd;
+}
+
+input:focus.invalid {
+  outline: none;
+  /* make sure keyboard-only users see a change when focusing */
+  border-style: dashed;
+}
+
+/* error messages */
+#error {
+  width: 100%;
+  font-size: 80%;
+  color: white;
+  background-color: #990000;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.active {
+  padding: 0.3rem;
+}
+
+#country {
+    max-width: 500px;
+    color: rgb(18, 122, 122);
+}
+
+label {
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+button[type=submit] {
+    display: block;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number] {
+    display: block;
+    width: 200px;
+    height: 25px;
+    margin-top: 8px;
+    background-color: rgb(235, 233, 233);
+    border-radius: 10px;
+    border: 1px solid #e9e7e7;
+    margin: 0 auto;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.emailError {
+    color: #990000;
+    margin-bottom: 20px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.error-message.active {
+    display: block;
+}
+
+#success-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50%;
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    animation: fadeIn 0.5s ease-in; /* A little test run */
+}
